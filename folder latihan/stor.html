@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setor tunai</title>
+</head>
+<center>
+<body>
+		Masukan Uaang Anda  <br/>
+		<input type="text" name="nilai" id="nilai2"><br/><br/>
+		<input type="submit" onclick="jumlah()" value="Setor Tunai Sekarang">
+		<p id="isi"></p>
+ 
+		<script type="text/javascript">
+		function jumlah(){
+ 
+			 
+			var dua = document.getElementById('nilai2').value;
+            var tiga = 50000;
+			var total = parseInt(dua) + parseInt(tiga);
+			document.getElementById('isi').innerHTML = " Uang Tunai Anda Sekarang =" +  total;
+		}
+		
+	</script>
+    </center>
+    </body>
+</body>
+</html>

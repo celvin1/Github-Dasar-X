@@ -1,0 +1,51 @@
+<html>
+    <head>
+      <title>Latihan switch</title>
+    <script language="JavaScript">
+    
+    function verifyDay(form){
+      var myEntry = form.day.value.toUpperCase();
+
+      var awal = "Yahhhh wahyu";
+
+      var tengah = "sabar masih pertengahan";
+
+      var akhir = "libur yeh";
+
+      switch(myEntry){
+        case "SENIN" :
+          alert(awal);
+          break;
+        case "SELASA" :
+          alert("main dulu kuy");
+          break;
+        case "RABU" :
+          alert(tengah);
+          break;
+        case "KAMIS" :
+          alert("pembagian nasi kotak");
+          break;
+        case "JUM'AT" :
+          alert("Jum'atan Dulu Borrrr");
+          break;
+        case "SABTU" :
+          alert("liburan dulu gasehhhhhh");
+           break;
+        case "MINGGU" :
+          alert(akhir);
+          break;
+        default :
+          alert('ga bener lu masukin hari nya');
+      }
+    }
+   
+    </script>
+    </head>
+    <body>
+    <form name="myForm">
+    <b>Masukan bulan:</b><br>
+      <input autocomplete="off" type=TEXT value="" name="day">
+      <input type=BUTTON value="Ok" name="myButton" onClick='verifyDay(this.form)'>
+    </form>
+    </body>
+    </html>
